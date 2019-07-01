@@ -7,8 +7,8 @@ const ejs = require("ejs");
 const app = express();
 
 // 3.添加指定的端口和监听
-app.listen(3000, () => {
-  console.log("http://127.0.0.1:3000");
+app.listen(3001, () => {
+  console.log("http://127.0.0.1:3001");
 });
 
 // 4.设置模板引擎为ejs
