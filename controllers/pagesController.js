@@ -6,6 +6,7 @@
 // }
 
 module.exports={
+    //前端页面
     getIndexpage(req,res){
         res.render('index.ejs')
     },
@@ -15,6 +16,7 @@ module.exports={
     getDetailpage(req,res){
         res.render('detail')
     },
+    //后端页面
     getAdminpage(req,res){
         res.render('admin')
     },
