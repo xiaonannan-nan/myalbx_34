@@ -12,13 +12,20 @@ router
   .get("/", pagesController.getIndexpage)
   .get("/list", pagesController.getListpage)
   .get('/detail',pagesController.getDetailpage)
-
-
-
-
-
-
-
+// 后台页面
+  .get('/admin',pagesController.getAdminpage)
+  .get('/admin/categories',pagesController.getCategoriesPage)
+  .get('/admin/comments',pagesController.getCommentsPage)
+  .get('/admin/login',pagesController.getLoginPage)
+  .get('/admin/nav-menus',pagesController.getNavmenusPage)  
+  .get('/admin/password-reset',pagesController.getPasswordresetPage)   
+  .get('/admin/post-add',pagesController.getPostaddPage) 
+  .get('/admin/posts',pagesController.getPostsPage)
+  .get('/admin/profile',pagesController.getProfilepage)
+  .get('/admin/settings',pagesController.getSettingspage)
+  .get('/admin/slides',pagesController.getSlidespage)
+  .get('/admin/users',pagesController.getUserspage)
+  
 
 //暴露
 module.exports = router;
